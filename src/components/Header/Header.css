@@ -1,0 +1,82 @@
+.header {
+    color: #333;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    z-index: 100;
+}
+
+.headerWrapper {
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+    width: 1080px;
+    overflow: hidden;
+}
+
+.menu {
+    max-width: 100%;
+    text-align: right;
+}
+
+.title {
+    color: #999;
+    display: block;
+    font-weight: 300;
+}
+
+.logoLink {
+    float: left;
+    font-family: 'Pacifico', cursive, Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    color: #ff9f89;
+    text-align: left;
+    line-height: 78px;
+    letter-spacing: 2px;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+}
+
+.logoText {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+
+    .headerWrapper {
+        text-align: center;
+    }
+
+    .logoLink {
+        float: none;
+        position: initial;
+    }
+
+    .logoText {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .logo {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .title {
+        margin: 10px 0 25px 0;
+    }
+
+    .menu {
+        position: static;
+    }
+}

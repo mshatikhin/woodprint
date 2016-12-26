@@ -1,0 +1,118 @@
+.root {
+    text-align: center;
+    margin: auto;
+    padding: 50px 0;
+    user-select: none;
+}
+
+.avatarWrapper {
+    display: inline-block;
+}
+
+.avatar {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    background: no-repeat center;
+    background-size: cover;
+    transition: background-image .1s ease-out;
+}
+
+.avatarActive {
+    z-index: 1;
+    box-shadow: 0 1px 3px 0 #b1b1b1;
+    width: 120px;
+    height: 120px;
+}
+
+.prev, .next {
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    outline: none;
+    height: 32px;
+    width: 18px;
+    opacity: .7;
+    transition: .3s all ease;
+}
+
+.prev:hover, .next:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.prev {
+    margin-right: 50px;
+    background: url("./images/left.png") no-repeat;
+}
+
+.next {
+    margin-left: 50px;
+    background: url("./images/right.png") no-repeat;
+}
+
+.prevAvatar {
+    margin-right: -10px;
+}
+
+.nextAvatar {
+    margin-left: -10px;
+}
+
+.prevAvatar:hover, .nextAvatar:hover {
+    opacity: 1;
+}
+
+.prevAvatar, .nextAvatar {
+    opacity: .7;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.prevAvatar img, .nextAvatar img {
+    min-width: 100%;
+    max-width: none;
+    height: 80px;
+}
+
+.title {
+    margin: 40px 0;
+    font-weight: bold;
+}
+
+.comment {
+    font-style: italic;
+    font-size: 14px;
+    color: #606060;
+    line-height: 28px;
+    text-align: center;
+}
+
+.reviewWrapper {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.reviewsWrapper {
+    overflow: hidden;
+}
+
+.reviewsContainer {
+    margin-left: 0;
+    transition: .3s all ease-in-out;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 500px) {
+    .prev, .next {
+        display: none;
+    }
+}

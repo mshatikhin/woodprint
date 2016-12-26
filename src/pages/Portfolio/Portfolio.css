@@ -1,0 +1,19 @@
+.main {
+    display: block;
+    width: 1080px;
+    max-width: 100%;
+    min-height: 800px;
+    margin: auto;
+    padding-top: 60px;
+}
+
+.card iframe {
+    max-width: 100% !important;
+    width: 1080px;
+    height: 448px;
+    background: transparent;
+}
+
+.card {
+    margin-bottom: 60px;
+}
