@@ -2,8 +2,6 @@
 
 import styles from "./Header.css";
 import Menu from "../Menu/Menu";
-import Socials from "../Socials/Socials";
-import {Link} from "react-router";
 import React, {Component} from "react";
 
 export default class Layout extends Component {
@@ -16,9 +14,9 @@ export default class Layout extends Component {
         return (
             <div className={styles.header}>
                 <div className={styles.headerWrapper}>
-                    <Link to="/" className={styles.logoLink}>
-                        <div className={styles.logoText}>Fish Art</div>
-                    </Link>
+                    <a href="/" className={styles.logoLink}>
+                        <div className={styles.logoText}>Woodprint</div>
+                    </a>
                     <div className={styles.menu}>
                         <Menu />
                     </div>

@@ -1,11 +1,10 @@
 import React, {Component} from "react";
 import styles from "./Menu.css";
-import {Link} from "react-router";
 import Socials from "../Socials";
 
-const MenuLink = ({url, title}) => <Link className={styles.link} activeClassName={styles.activeLink} to={url}>
+const MenuLink = ({url, title}) => <a className={styles.link} activeClassName={styles.activeLink} href={url}>
     {title}
-</Link>;
+</a>;
 
 export default class Menu extends Component {
     constructor(props) {

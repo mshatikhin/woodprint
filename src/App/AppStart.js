@@ -3,21 +3,13 @@ import "whatwg-fetch";
 import "./App.css";
 import React from "react";
 import ReactDOM from "react-dom";
-import {browserHistory, Router} from "react-router";
-import {Provider} from "react-redux";
-import routes from "./routes";
-import configureStore from "../redux/configureStore";
+import Layout from "../components/Layout/Layout"
+import Home from "../pages/Home/Home"
 
-const initialState = window.REDUX_INITIAL_STATE || {};
+const App = () => (
+    <Layout>
+        <Home />
+    </Layout>
+)
 
-const store = configureStore(initialState);
-
-const component = (
-    <Provider store={store}>
-        <Router history={browserHistory}>
-            {routes(store)}
-        </Router>
-    </Provider>
-);
-
-ReactDOM.render(component, document.getElementById("app"));
+ReactDOM.render(<App/>, document.getElementById("app"));
