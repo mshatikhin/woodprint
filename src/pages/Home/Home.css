@@ -1,3 +1,115 @@
-.root{
+.root {
 
+}
+
+.contentWrapper {
+    position: relative;
+    padding: 0;
+}
+
+.contentWrapper:before {
+    content: "";
+    transform: rotateZ(-6deg);
+    position: absolute;
+    top: -245px;
+    left: 0;
+    display: block;
+    height: 170px;
+    width: 100%;
+    background: #fff;
+    z-index: 1;
+    border-right: 100px solid #fff;
+    box-sizing: content-box;
+}
+
+.posterWrapper {
+    position: relative;
+    background: url("./images/main.png") no-repeat;
+    background-size: cover;
+    height: 810px;
+    max-width: 100%;
+}
+
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.posterText {
+    position: absolute;
+    bottom: 150px;
+    font-size: 32px;
+    color: #ffffff;
+    line-height: 40px;
+    text-align: left;
+    padding: 0 50px;
+}
+
+.landingWrapper {
+    margin-top: 150px;
+}
+
+.imageLeftWrapper, .imageRightWrapper {
+    max-width: 100%;
+    width: 600px;
+}
+
+.imageLeftWrapper {
+    float: left;
+}
+
+.imageRightWrapper {
+    float: right;
+}
+
+.landingWrapper:after, .landingWrapper:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.textWrapper {
+    float: left;
+    width: 550px;
+    font-weight: 100;
+    font-size: 16px;
+    color: #303030;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.header {
+    font-weight: 400;
+    font-size: 28px;
+    color: #303030;
+    margin-bottom: 30px;
+}
+
+.textWrapper .header:after {
+    content: "";
+    display: block;
+    background: #c10ca2;
+    border-radius: 20px;
+    width: 60px;
+    height: 6px;
+    margin-top: 20px;
+}
+
+.spec {
+    margin-top: 30px;
+}
+
+.specInfo {
+    font-size: 16px;
+    font-weight: 500;
+    color: #303030;
+    text-align: left;
+    margin-right: 30px;
+}
+
+.sizeWrapper {
+    margin-top: 150px;
 }

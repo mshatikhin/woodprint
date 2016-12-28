@@ -131,6 +131,9 @@ class Reviews extends Component {
     render() {
         return (
             <div className={styles.root} style={{width: this.state.width}}>
+                <header className={styles.header}>
+                    Отзывы наших клиентов
+                </header>
                 <div>
                     <button className={styles.prev} onClick={this.prev}></button>
                     <ReviewAvatars

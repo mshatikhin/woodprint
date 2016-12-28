@@ -1,0 +1,115 @@
+
+.root {
+    width: 1080px;
+    margin: auto;
+    max-width: 100%;
+}
+
+.orderBtn {
+    background: #c10ca2;
+    border-radius: 40px;
+    padding: 20px 40px;
+    font-weight: 100;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+}
+
+.header {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 28px;
+    color: #303030;
+}
+
+.shippingWrapper .header {
+    text-align: center;
+}
+
+.shippingWrapper {
+    border-top: 2px solid #ddd;
+    margin-top: 75px;
+    padding-top: 75px;
+    box-sizing: content-box;
+}
+
+.shippingInfo {
+    margin-top: 100px;
+    display: table;
+}
+
+.shippingInfoCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+    text-align: center;
+    padding: 40px 80px;
+}
+
+.shippingInfoCell:first-child {
+    border-right: 1px solid #ddd;
+}
+
+.image {
+    display: block;
+    text-align: center;
+    max-width: 100%;
+    margin: auto auto 50px;
+}
+
+.hint {
+    display: block;
+    margin-top: 20px;
+    font-weight: 100;
+    font-size: 14px;
+    color: #606060;
+    line-height: 22px;
+    text-align: center;
+}
+
+.popularSizes {
+    width: 300px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.popularSizes td {
+    font-size: 16px;
+    color: #303030;
+    text-align: left;
+    padding: 4px 0;
+}
+
+.popularSizes td:nth-child(1) {
+    text-align: left;
+}
+
+.popularSizes td:nth-child(2) {
+    font-weight: 100;
+    font-size: 16px;
+    color: #aaaaaa;
+    text-align: left;
+}
+
+.popularSizes td:nth-child(3) {
+    text-align: right;
+}
+
+.info {
+    font-weight: 100;
+    font-size: 16px;
+    color: #303030;
+    text-align: left;
+    width: 550px;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.printImages {
+    float: right;
+    width: 400px;
+    height: 400px;
+    background: #ddd;
+}

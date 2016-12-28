@@ -111,6 +111,13 @@
     overflow: hidden;
 }
 
+.header {
+    font-weight: 400;
+    font-size: 28px;
+    color: #303030;
+    margin-bottom: 110px;
+}
+
 @media screen and (max-width: 500px) {
     .prev, .next {
         display: none;
