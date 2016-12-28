@@ -1,5 +1,5 @@
 // @flow
-import {Component} from "react";
+import React, {Component,PropTypes} from "react";
 import styles from "./Reviews.css";
 import classnames from "classnames";
 
@@ -87,6 +87,7 @@ const ReviewAvatars = ({activeIndex, prev, next}) => {
 };
 
 type IState = {
+    width: number;
     activeReviewIndex: number;
 }
 
@@ -192,11 +193,11 @@ class Reviews extends Component {
     };
 
 
-    touchstart = (event) => {
+    touchstart = (event: any) => {
         initialPoint = event.changedTouches[0];
     };
 
-    touchend = (event) => {
+    touchend = (event: any) => {
         finalPoint = event.changedTouches[0];
         const xAbs = Math.abs(initialPoint.pageX - finalPoint.pageX);
         const yAbs = Math.abs(initialPoint.pageY - finalPoint.pageY);
@@ -213,8 +214,8 @@ class Reviews extends Component {
 }
 
 Reviews.propTypes = {
-    reviews: React.PropTypes.array,
-    width: React.PropTypes.number
+    reviews: PropTypes.array,
+    width: PropTypes.number
 };
 
 Reviews.defaultProps = {
